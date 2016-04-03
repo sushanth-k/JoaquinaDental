@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>    
+    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"-->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,100,300italic' rel='stylesheet' type='text/css'>
+    <title>Joaquina Dental</title>
+</head>
+
+<body ng-app="todoApp" ng-controller="homeCtrl" role="document">
+
+    <!--div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/Home">Welcome to Joaquina Dentail</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li ng-class="{ active: isActive('/Home') }"><a href="#/Home">Home</a></li>
+                    <li ng-class="{ active: isActive('/OurPractice') }"><a href="#/OurPractice">Our Practice</a></li>
+                    <li ng-class="{ active: isActive('/Treatments') }"><a href="#/Treatments">Treatments</a></li>
+                    <li ng-class="{ active: isActive('/Reviews') }"><a href="#/Reviews">Reviews</a></li>
+                    <li ng-class="{ active: isActive('/Appointments') }"><a href="#/Appointments">Appointments</a></li>
+                    <li ng-class="{ active: isActive('/TodoList') }"><a href="#/TodoList">Todo List</a></li>
+                    <li ng-class="{ active: isActive('/UserData') }"><a href="#/UserData" ng-show="userInfo.isAuthenticated">User</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="btn btn-link" ng-show="userInfo.isAuthenticated" ng-click="logout()">Logout</a></li>
+                    <li><a class="btn btn-link" ng-hide="userInfo.isAuthenticated" ng-click="login()">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </!--div>
+
+    <br />
+
+    <div class="container" role="main">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1" style="background-color:azure">
+                <div class="page-header">
+                    <h1>Todo List</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+                <div ng-view class="panel-body">
+                </div>
+            </div>
+        </div>
+    </div-->
+
+    <div class="header-ribbon-row">
+        <nav>
+            <div class="header-row">
+
+                <ul class="header-nav">
+                    <li><p><i class="ion-clock"></i>  Mon-Fri: 8AM - 5PM</p></li>
+                    <li><p><i class="ion-ios-location-outline"></i>  3127, North Boulevard, CO - 77801</p></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- <img src="resources/css/img/shark icon1.png" alt="Rio Logo" class="logo"> -->
+    <div class="row">
+        <nav class="sticky">
+            <div class="row">
+                <img src="resources/css/img/shark icon1.png" alt="Rio Logo" class="logo">
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#features">Our Practice</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#">Schedule Appointment</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><p>| <i class="ion-ios-telephone-outline"></i>  1800-JOAQ-INA</p></li>
+                </ul>
+                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+            </div>
+        </nav>
+    </div>
+
+    <header>
+        <div class="hero-text-box">
+            <h1>Welcome to Joaquina Dental<br><h2>Come receive the best dental <br>care in town.</h2></h1>
+            <a class="btn btn-full" href="#">Schedule appointment</a>
+            <a class="btn btn-ghost js--scroll-to-start" href="#">More about us</a>
+        </div>
+    </header>
+
+    <section class="section-features js--section-features" id="features">
+        <div class="row">
+
+            <h2>Get dental care &mdash; not dental despair.</h2>
+            <p class="long-copy">
+                Hello, we are Joaquina Dental, your friendly team of dentists who want to see you smile. If you face any trouble at all, come to us, we are really good at it, we promise!
+            </p>
+        </div>
+
+        <div class="row  js--wp-1">
+
+            <div class="col span-1-of-4 box">
+                <i class="ion-clock icon-big"></i>
+                <h3>Round the clock service</h3>
+                <p>
+                    We have a large team of medical experts who ensure that our patients get prompt medical attention and are available 24/7 and 365 days a year.
+                </p>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="ion-card icon-big"></i>
+                <h3>The Sharkly Smiles Plan</h3>
+                <p>
+                    Our Sharkly Smiles plan is a comprehensive package that enables customers without insurance to stay on budget and gain significant savings!
+                </p>
+            </div>
+
+            <div class="col span-1-of-4 box">
+                <i class="ion-medkit icon-big"></i>
+                <h3>Emergency Care</h3>
+                <p>
+                    We are fully equipped with an ambulance and a trauma care unit to offer immediate medical attention in times of crisis
+                </p>
+            </div>
+
+            <div class="col span-1-of-4 box">
+                <i class="ion-ios-people icon-big"></i>
+                <h3>Our Dentists</h3>
+                <p>
+                    Our workforce of dentists and experts boasts of highly qualified doctors who are from the top ranked dental schools across the country.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-testimonials" id="testimonials">
+        <div class="row">
+            <h2> Here's what our patients have to say about us </h2>
+            <div class="row">
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        I was very anxious about my root canal treatment, but the dental staff at Joaquina were very friendly and made the whole experience an enjoyable one!
+                        <cite><img src="resources/css/img/customer-1.jpg" />Alberto Duncan</cite>
+                    </blockquote>
+                </div>
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        My 6 year old daughter loves Rio! she looks forward to her dental appointments just so that she can meet Rio, which is a huge improvement from when she did everything possible to avoid the dreaded dentist.
+                        <cite><img src="resources/css/img/customer-2.jpg" />Joana Silva</cite>
+                    </blockquote>
+                </div>
+                <div class="col span-1-of-3">
+                    <blockquote>
+                        I was new to the country and did not have dental insurance yet. However, the staff at Joaquina worked with me and devised a budget friendly plan, all the while offering top quality services!
+                        <cite><img src="resources/css/img/customer-3.jpg" />Milton Chapman</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-form">
+        <div class="row">
+            <h2>We're happy to hear from you</h2>
+        </div>
+        <div class="row">
+            <form method="post" action="#" class="contact-form">
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="find-us">How did you find us?</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <select name="find-us" id="find-us">
+                            <option value="friends" selected>Friends</option>
+                            <option value="search">Search engine</option>
+                            <option value="ad">Advertisement</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Newsletter?</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="checkbox" name="news" id="news" checked> Yes, please
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Drop us a line</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="message" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input class="btn btn-full" type="submit" value="Send it!">
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p> Copyright &copy; 2016 by Team 6 - IS Design. All rights reserved. </p>
+            </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.25/angular-route.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!--<script src="app/scripts/adal.js"></script>
+    <script src="app/scripts/adal-angular.js"></script>-->
+    <script src="app/scripts/app.js"></script>
+    <script src="app/scripts/homeCtrl.js"></script>
+    <script src="app/scripts/userDataCtrl.js"></script>
+    <script src="app/scripts/todoListCtrl.js"></script>
+    <script type="text/javascript">
+        var apiEndpoint = "@System.Configuration.ConfigurationManager.AppSettings["toDoListAPIURL"]";
+    </script>
+    <script src="app/scripts/todoListSvc.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/scripts.js"></script>
+</body>
+</html>
